@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208cbd46ecbb1ce478f3b3e64c477307, type: 3}
   m_Name: Openingdialogue
   m_EditorClassIdentifier: 
-  dialogueName: 
+  dialogueName: Test
   dialogueContents:
   - Ah.... Who am I? What is this place?
   - Where are the exit?
+  - ......
