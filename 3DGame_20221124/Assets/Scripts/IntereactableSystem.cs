@@ -18,6 +18,9 @@ namespace Alex
         [SerializeField, Header("DialogueDataActive")]
         private DialogueData dataDialogueActive;
 
+        [SerializeField, Header("EventAfterDialogueActive")]
+        private UnityEvent onDialogueFinishAfterActive;
+
         private string nameTarget = "PlayerCapsule";
         private DialogueSystem dialogueSystem;
 
@@ -38,7 +41,7 @@ namespace Alex
                 }
                 else
                 {
-                    dialogueSystem.StartDialogue(dataDialogueActive);
+                    dialogueSystem.StartDialogue(dataDialogueActive, onDialogueFinishAfterActive);
                 }
             }
 
